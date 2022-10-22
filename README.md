@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# sD3v
+
+Personal website inspired by [So Simple Theme](https://github.com/mmistakes/so-simple-theme).
 
 ## Getting Started
 
