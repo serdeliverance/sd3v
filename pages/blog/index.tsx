@@ -1,20 +1,25 @@
 import { Button, Container, Typography } from '@mui/material'
-import React from 'react'
+import React, { FC } from 'react'
+import { Layout } from '../../components'
 
-const BlogPage = () => {
+interface Props {}
+
+const BlogPage: FC<Props> = () => {
   return (
-    <Container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-      }}
-    >
-      <Typography variant="h2" component="h2">
-        Blog
-      </Typography>
-      <Button>Click here</Button>
-    </Container>
+    <Layout>
+      <Container
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          paddingTop: 3,
+        }}
+      >
+        <Typography variant="h2" component="h2">
+          Blog
+        </Typography>
+      </Container>
+    </Layout>
   )
 }
 
