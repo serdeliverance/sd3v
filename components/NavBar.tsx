@@ -62,7 +62,7 @@ export const NavBar: FC<Props> = () => {
               textDecoration: 'none',
             }}
           >
-            TODO LOGO
+            LOGO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
