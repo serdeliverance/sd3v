@@ -1,3 +1,4 @@
+import { Box } from '@mui/material'
 import Head from 'next/head'
 import React, { FC, ReactNode } from 'react'
 import { NavBar } from '.'
@@ -27,7 +28,11 @@ export const Layout: FC<Props> = ({ children, title = 'sD3v' }) => {
       </Head>
 
       <NavBar />
-      <main>{children}</main>
+      <main>
+        <Box marginTop={2} paddingX={10}>
+          {children}
+        </Box>
+      </main>
     </>
   )
 }

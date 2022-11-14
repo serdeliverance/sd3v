@@ -5,8 +5,8 @@ import { Layout } from '../../components'
 const AboutPage = () => {
   return (
     <Layout>
-      <Box display="flex" flexDirection="column" paddingX={10}>
-        <Typography variant="h1" component="h1">
+      <Box display="flex" flexDirection="column">
+        <Typography variant="h2" component="h2">
           About
         </Typography>
         <Typography variant="body2" component="p">
