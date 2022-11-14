@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
-import AdbIcon from '@mui/icons-material/Adb'
+import SelfImprovementIcon from '@mui/icons-material/SelfImprovement'
 import { FC } from 'react'
 import Link from 'next/link'
 
@@ -47,7 +47,9 @@ export const NavBar: FC<Props> = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box></Box>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <SelfImprovementIcon
+            sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -63,7 +65,7 @@ export const NavBar: FC<Props> = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            sD3v
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -102,7 +104,9 @@ export const NavBar: FC<Props> = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <SelfImprovementIcon
+            sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}
+          />
           <Typography
             variant="h5"
             noWrap
