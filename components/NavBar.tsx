@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import AdbIcon from '@mui/icons-material/Adb'
 import { FC } from 'react'
+import Link from 'next/link'
 
 const pages = ['About', 'Blog', 'Experience', 'Contact', 'Projects']
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
@@ -122,13 +123,14 @@ export const NavBar: FC<Props> = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <Link href={`/${page.toLocaleLowerCase()}`} key={page}>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
 

@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { FC } from 'react'
+import { Layout } from '../../components'
 
-export const ContactPage = () => {
+interface Props {}
+
+const ContactPage: FC<Props> = () => {
   return (
-    <div>ContactPage</div>
+    <Layout>
+      <div>ContactPage</div>
+    </Layout>
   )
 }
+
+export default ContactPage
