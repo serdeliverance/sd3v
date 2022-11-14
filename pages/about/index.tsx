@@ -9,11 +9,15 @@ const AboutPage = () => {
         <Typography variant="h2" component="h2">
           About
         </Typography>
-        <Typography variant="body2" component="p">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-          unde dolorem debitis nesciunt sit incidunt repudiandae ipsam ad
-          consequuntur aliquid quos saepe obcaecati libero similique nulla
-          inventore. Explicabo, at in!
+        <Typography variant="body2" paragraph={true} marginTop={2}>
+          Fullstack Engineer stronger on backend. Most of my experience is based
+          on JVM related technologies (Scala and Java). The aim of this blog is
+          to share knowledge about JVM technologies, Microservices and Reactive
+          Programming.
+        </Typography>
+        <Typography variant="body2" paragraph={true}>
+          Also, I’m a Systems Engineer graduated from Universidad Tecnológica
+          Nacional with a postgraduate in Business Intelligence.
         </Typography>
       </Box>
     </Layout>
